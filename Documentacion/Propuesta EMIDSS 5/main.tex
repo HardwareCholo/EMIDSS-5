@@ -1,0 +1,93 @@
+\documentclass{article}%Formato de plantilla que se utiliza
+\usepackage[utf8]{inputenc}%Esto sirve para que nos interprete todos los caracteres en español
+\usepackage[spanish]{babel}%Selecciona el lenguaje
+\usepackage[margin=2cm, top=2cm, includefoot]{geometry}
+\usepackage{graphicx}
+\usepackage{subcaption}
+\usepackage[table,xcdraw]{xcolor}
+\usepackage{tikz,lipsum,lmodern}
+\usepackage[most]{tcolorbox}
+\usepackage{fancyhdr}
+\usepackage{amssymb, amsmath} %Paquetes matemáticos
+\usepackage{ragged2e}
+\usepackage{multirow}
+
+%declaración de varbiales
+\newcommand{\hyperlogo}{img/hyperlogo.png}
+\newcommand{\logoUpiita}{img/ulogo.png}
+\newcommand{\logoIPN}{img/ilogo.png}
+\newcommand{\practica}{Práctica n}%Numero de actividad
+%definición de colores
+\definecolor{doradoPortada}{HTML}{c7b438}
+\definecolor{cherry}{HTML}{6d1741}
+\definecolor{blanco}{HTML}{FFFFFF}
+\definecolor{morado}{HTML}{c099c6}
+%adicionales
+\addto\captionsspanish{\renewcommand{\contentsname}{Índice}}
+\pagestyle{fancy}
+\setlength{\headheight}{58pt}
+\setlength{\parindent}{1cm}
+\fancyhf{}
+%s\rhead{\includegraphics[width=0.155\textwidth]{\logoIPN}}
+\lhead{\includegraphics[width=0.18\textwidth]{\hyperlogo}}
+\renewcommand{\headrulewidth}{3pt}
+\renewcommand{\headrule}{\hbox to\headwidth {\color{morado}\leaders\hrule height\headrulewidth\hfill}}
+%\lfoot{Juan Manuel Mejia Pérez}
+\rfoot{\thepage}
+
+\begin{document}%Aquí empieza todo el documento
+\begin{titlepage}
+\centering
+\includegraphics[width=0.8\textwidth]{\hyperlogo}\par\vspace{1cm}
+{\huge\bfseries{Hypernova Aerospace}}\par\vspace{0.4cm}
+{\scshape{\large EMIDSS 5}}\par\vspace{3cm}
+{\bfseries{\huge Propuestas para carga útil para mandar abordo de la plataforma EMIDSS 5}}\par\vspace{2cm}
+
+%{\scshape{\large Práctica 3 y 4.}}\par\vspace{3cm}
+%{\huge \practica}\par\vspace{3cm}
+\begin{flushleft}
+\begin{tcolorbox}[enhanced jigsaw,breakable,pad at break*=1mm,
+  colback=morado,colframe=white!25!black,title=\scshape\large Equipo asesorado por Ing. Edgar López Múzquiz,
+  watermark color=white]
+{\scshape\textcolor{blanco}{\normalsize Mejia Pérez Juan Manuel}}\par
+{\scshape\textcolor{blanco}{\normalsize López Favila Carlos Josafath}}\par
+{\scshape\textcolor{blanco}{\normalsize Falcón Cortez Juan Daniel}}\par
+{\scshape\textcolor{blanco}{\normalsize Ruíz Rodríguez Iris Zuheily}}\par
+{\scshape\textcolor{blanco}{\normalsize Torres Leyva Leonardo}}\par
+{\scshape\textcolor{blanco}{\normalsize Cervantes García Jaime Enrique Napoleón}}\par
+{\scshape\textcolor{blanco}{\normalsize Ibarra Emilio}}\par
+{\scshape\textcolor{blanco}{\normalsize Torres Rodrigo}}\par
+\end{tcolorbox}\par\vspace{1cm}
+\vfill
+\end{flushleft}
+{\large 18 de septiembre del 2023}
+\end{titlepage}
+%----------------------------------------------------------------------------------------------------------
+\clearpage
+\section*{Propuesta 1: CubeSat de dos unidades para la investigación de microondas provenientes del
+fondo cósmico}
+\justify
+El fondo cósmico de microondas es una radio que impregna todo el universo con origen hace más de 13 800 
+millones de años y se le conoce como el eco del bigbang. Se propone instrumentar al CubeSat para que pueda 
+captar microondas durante su vuelo para su posterior estudio. El CubeSat también contaría con una cámara 
+para el envío de imágenes a través de radiofrecuencia hacia nuestra estación terrena. Nuestro CubeSat contaría 
+con su batería, su sistema de potencia para captar y distribuir la energía y su electrónica para la telemetría 
+del CubeSat.
+\section*{Propuesta 2: CubeSat de dos unidades para el estudio de obtención de energía del ambiente}
+\justify
+Se plantea desarrollar un CubeSat de dos unidades para probar un sistema desarrollado por nosotros que aprovecha 
+los vientos existentes en la tropopausa y apoyado por celdas solares. El sistema de potencia se encargaría de 
+obtener la energía para alimentar una cámara y todos sistemas del CubeSat encargados de la telemetría, navegación 
+y toma de imágenes para enviarlas a nuestra estación terrena. Nuestro CubeSat contaría 
+con su batería, su sistema de potencia para captar y distribuir la energía y su electrónica para la telemetría 
+del CubeSat.
+\section*{Propuesta 3: CubeSat de dos unidades para estudiar el cuidado de una planta en condiciones poco favorables 
+para la vida}
+\justify
+Se propone instrumentar el CubeSat para mantener con vida una planta que ocupe poco espacio y sea sencilla de cuidar. El 
+CubeSat también tendría una cámara para tomar fotografías y mandarlas por radiofrecuencia a nuestra estación terrena al igual 
+que la telemetría. Nuestro CubeSat contaría 
+con su batería, su sistema de potencia para captar y distribuir la energía y su electrónica para la telemetría 
+del CubeSat.
+
+\end{document}
